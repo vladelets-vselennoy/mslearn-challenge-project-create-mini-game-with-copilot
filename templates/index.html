@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        #result {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        #result span {
+            color: #333;
+            font-weight: bold;
+        }
+
+        #result .win {
+            color: green;
+        }
+
+        #result .lose {
+            color: red;
+        }
+
+        #result .draw {
+            color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Rock, Paper, Scissors Game</h1>
+    
+    <form action="/play" method="post">
+        <label for="choice">Choose: </label>
+        <select name="choice" id="choice">
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Play">
+    </form>
+
+    <div id="result">
+        {% if result %}
+            {{ result }}
+        {% endif %}
+    </div>
+</body>
+</html>
