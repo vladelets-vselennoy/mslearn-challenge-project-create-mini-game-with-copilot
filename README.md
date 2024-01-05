@@ -1,3 +1,2 @@
-# Challenge project - Build a minigame console app with GitHub Copilot
-
-Starter and Final code for the Challenge project: "Challenge project - Build a minigame console app with GitHub Copilot". To check the solution, change the branch to **Solution**.
+# challenge Project of creating game on Rock, Scissor, Paper
+Used template from microsoft docs and added logic of game and created a web app project
